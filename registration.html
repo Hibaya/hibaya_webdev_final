@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=">
+  <title></title>
+</head>
+<body bgcolor="gray" >
+  <!--
+  <table border="1">
+    <tr>
+      <td><em>Row1</em> Col1</td>
+      <td>Row1 Col2</td>
+    </tr>
+    <tr>
+      <td>Row2 Col1</td>
+      <td>Row2 Col2</td>
+    </tr>    
+  </table>
+  -->
+  <p> This registration is compose of different features which conducts filling up your personal information
+  </br>Information that may needed by the admin to put a user in there system and will be registered as there employee.
+  </br> the best and required today is to register yourself to examine and to avoid the bad employee that causes trouble to the company
+</br> the username and password will be your access to your account in the website and also it prompt in our database your information that you register.</p>
+
+  </br>
+  <legend><b>Registration Form</b></legend>
+      <table>
+           <tr>
+          <td>Username</td>
+          <td><input type="text" 
+                     id="txtName" 
+                     name="txtName"
+                     placeholder=""
+                     />
+          </td>
+        </tr>
+        <tr>
+        <tr>
+          <td>Family Name</td>
+          <td><input type="text" 
+                     id="txtName" 
+                     name="txtName"
+                     placeholder=""
+                     />
+          </td>
+        </tr>
+        <tr>
+               <tr>
+          <td>First Name</td>
+          <td><input type="text" 
+                     id="txtName" 
+                     name="txtName"
+                     placeholder=""
+                     />
+          </td>
+        </tr>
+        <tr>
+         
+          
+               <tr>
+          <td>Middle Name</td>
+          <td><input type="text" 
+                     id="txtName" 
+                     name="txtName"
+                     placeholder=""
+                     />
+          </td>
+        </tr>
+        <tr>
+           
+               <tr>
+          <td>Birthdate</td>
+          <td><label for="birthday"></label>
+                    <input type="date" name="birthday"
+                     />
+          </td>
+        </tr>
+        <tr>
+          
+          
+          <td>Password</td>
+          <td><input type="password" id="txtPassword" name="txtPassword" placeholder="" /></td>
+        </tr>
+        
+           <td> Confirm Password</td>
+          <td><input type="password" id="txtPassword" name="txtPassword" placeholder="" /></td>
+        </tr>
+        
+         <td>Gender :</td>
+    <td>
+     <input type="radio" name="Gender"> Male
+     <input type="radio" name="Gender"> Female
+    </td>
+   </tr>
+        
+        <tr>
+          <td colspan="2">
+            Employment Status
+            <select name="drpLoginType" id="drpLoginType">
+              <option value="Guest">Unemployed </option>
+              <option value="Admin">Employed</option>
+              <option value="SuperUser">Self &nbsp;&nbsp;&nbsp;&nbsp; Employed </option>
+              <option value="Business Owner">Business Owner</option>
+            </select>
+            
+          </td>
+        </tr>
+        
+        <tr>
+          <td colspan="2">
+            <input type="checkbox" 
+                   id="cbxPolicy1"
+                   name="cbxPolicy1"
+                   value="I accept lorem ipsum"/>
+            <label for="cbxPolicy1">Single</label>
+          </td>
+        </tr>
+        
+        <tr>
+          <td colspan="2">
+            <input type="checkbox" 
+                   id="cbxPolicy2"
+                   name="cbxPolicy2"
+                   value="I accept lorem ipsum 2"/>
+            <label for="cbxPolicy2">Married</label>
+          </td>
+        </tr>        
+   <tr>
+          <td colspan="2">
+            <input type="checkbox" 
+                   id="cbxPolicy2"
+                   name="cbxPolicy2"
+                   value="I accept lorem ipsum 2"/>
+            <label for="cbxPolicy2">Divorce</label>
+          </td>
+        </tr>        
+        
+        <tr>
+          <td colspan="2" align="right">
+            <button id="btnLogin" onClick="alert(document.getElementById('txtName').value)">Register</button>
+          </td>
+        </tr>
+      </table>
+  
+</body>
+</html>
