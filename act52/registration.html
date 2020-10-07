@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -18,41 +18,31 @@
     </tr>    
   </table>
   -->
-  <p> This registration is compose of different features which conducts filling up your personal information
-  </br>Information that may needed by the admin to put a user in there system and will be registered as there employee.
-  </br> the best and required today is to register yourself to examine and to avoid the bad employee that causes trouble to the company
-</br> the username and password will be your access to your account in the website and also it prompt in our database your information that you register.</p>
+  <p> 
 
   </br>
-  <legend><b>Registration Form</b></legend>
+     <b>Registration Form</b>
       <table>
            <tr>
-          <td>Username</td>
-          <td><input type="text" 
-                     id="txtName" 
-                     name="txtName"
-                     placeholder=""
-                     />
+          <td>Username </td>
+              <td><input type="text" name="Middle Name" placeholder="Type your Username ..." minlength="10" required>
+
           </td>
+          
         </tr>
-        <tr>
-        <tr>
+       
           <td>Family Name</td>
-          <td><input type="text" 
-                     id="txtName" 
-                     name="txtName"
-                     placeholder=""
-                     />
+         <td><input type="text" name="Middle Name" placeholder="Type your Family Name ..." minlength="10" required>
+
+          </td>
+          
           </td>
         </tr>
         <tr>
                <tr>
           <td>First Name</td>
-          <td><input type="text" 
-                     id="txtName" 
-                     name="txtName"
-                     placeholder=""
-                     />
+          <td><i class="fas fa-user"></i>
+    <input type="text" placeholder="Username">
           </td>
         </tr>
         <tr>
@@ -60,11 +50,8 @@
           
                <tr>
           <td>Middle Name</td>
-          <td><input type="text" 
-                     id="txtName" 
-                     name="txtName"
-                     placeholder=""
-                     />
+          <td><input type="text" name="Middle Name" placeholder="Type your Middle Name ..." minlength="10" required>
+
           </td>
         </tr>
         <tr>
@@ -72,19 +59,18 @@
                <tr>
           <td>Birthdate</td>
           <td><label for="birthday"></label>
-                    <input type="date" name="birthday"
-                     />
+                    <input type="date" name="birthday">
           </td>
         </tr>
         <tr>
           
           
           <td>Password</td>
-          <td><input type="password" id="txtPassword" name="txtPassword" placeholder="" /></td>
+          <td><input type="password" id="pwd"  onkeyup="validatePassword(this.value);" placeholder="Type your password ..." required/><span id="msg">
         </tr>
         
            <td> Confirm Password</td>
-          <td><input type="password" id="txtPassword" name="txtPassword" placeholder="" /></td>
+          <td><input type="password" id="pwd"  onkeyup="validatePassword(this.value);" placeholder="Type your password ..." required/><span id="msg"></td>
         </tr>
         
          <td>Gender :</td>
@@ -93,7 +79,7 @@
      <input type="radio" name="Gender"> Female
     </td>
    </tr>
-        
+
         <tr>
           <td colspan="2">
             Employment Status
@@ -106,39 +92,30 @@
             
           </td>
         </tr>
+<br>
+<br>
         
         <tr>
           <td colspan="2">
-            <input type="checkbox" 
-                   id="cbxPolicy1"
-                   name="cbxPolicy1"
-                   value="I accept lorem ipsum"/>
-            <label for="cbxPolicy1">Single</label>
+            <input type="checkbox" name="checkbox"><span>Single</span>
           </td>
         </tr>
+
         
         <tr>
           <td colspan="2">
-            <input type="checkbox" 
-                   id="cbxPolicy2"
-                   name="cbxPolicy2"
-                   value="I accept lorem ipsum 2"/>
-            <label for="cbxPolicy2">Married</label>
+           <input type="checkbox" name="checkbox"><span>Married</span>
           </td>
         </tr>        
    <tr>
           <td colspan="2">
-            <input type="checkbox" 
-                   id="cbxPolicy2"
-                   name="cbxPolicy2"
-                   value="I accept lorem ipsum 2"/>
-            <label for="cbxPolicy2">Divorce</label>
+            <input type="checkbox" name="checkbox"><span>Divorce</span>
           </td>
         </tr>        
         
         <tr>
           <td colspan="2" align="right">
-            <button id="btnLogin" onClick="alert(document.getElementById('txtName').value)">Register</button>
+            <button id="btnLogin" onClick="alert(document.getElementById('txtName').value)"><b>Register</b></button>
           </td>
         </tr>
       </table>
